@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hürkuş Havacılık Kulübü</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="LogoArkası_kalkık.png"> <!-- Logo resminizin yolunu buraya ekleyin -->
+</head>
+<body>
+    <style>
+ h1 {
+    text-align: center; /* Başlığı ortala */
+    color: rgb(0, 0, 0); /* Başlık rengi: siyah */
+    margin-top: 0px; /* Başlık ile logonun arasına boşluk bırak */
+}
+
+/* style.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Ekran yüksekliği kadar olan alanı kapla */
+    margin: 0; /* Sayfa kenar boşluklarını kaldır */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+h1 {
+    margin-right: 50px;
+    font-size: 40px; /* Başlık boyutunu düzenleyin (örneğin, 24 piksel) */
+}
+
+
+#logo {
+    max-width: 140px;
+    height: auto;
+    margin-left: 150px; /* Örnek bir değer, ihtiyacınıza göre ayarlayabilirsiniz */
+}
+
+
+/* ... Diğer CSS kuralları ... */
+
+
+        ul {
+            list-style: none; /* Sırasız liste öğelerinin marker'larını kaldır */
+            padding: 0; /* Liste içi boşlukları kaldır */
+            margin: 0; /* Liste dışı boşlukları kaldır */
+            text-align: center; /* Listeyi ortala */
+        }
+
+        li {
+            margin-bottom: 20px; /* Her liste öğesi arasına boşluk bırak */
+            text-align: center; /* Liste öğelerini sola hizala */
+        }
+
+        img {
+            max-width: 100%; /* Resimlerin maksimum genişliği 100% olsun (ekran boyutuna sığacak şekilde) */
+            height: auto; /* Genişlik oranını koruyarak resmi ölçekle */
+            display: block; /* Resimlerin altındaki metinle arasına boşluk bırak */
+            margin: 0 auto; /* Resmi ortala */
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <h1>Hürkuş Havacılık Kulübü</h1>
+            <img id="logo" src="LogoArkası_kalkık.png" alt="Restoran Logosu">
+
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script>
+    // QR kodunu oluştur
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width: 100,
+        height: 100
+    });
+
+    // QR koduna linki ekle (örneğin, bu sayfanın linki)
+    qrcode.makeCode(window.location.href);
+</script>
+
+</body>
+</html>
