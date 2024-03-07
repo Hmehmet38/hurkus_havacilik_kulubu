@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hürkuş Havacılık Kulübü</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="LogoArkası_kalkık.png"> <!-- Logo resminizin yolunu buraya ekleyin -->
+<style>
+    h1 {
+    text-align: center; /* Başlığı ortala */
+    color: rgb(0, 0, 0); /* Başlık rengi: siyah */
+    margin-top: 0px; /* Başlık ile logonun arasına boşluk bırak */
+}
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Ekran yüksekliği kadar olan alanı kapla */
+    margin: 0; /* Sayfa kenar boşluklarını kaldır */
+}
+    #logo {
+    max-width: 140px;
+    height: auto;
+    margin-left: 150px; /* Örnek bir değer, ihtiyacınıza göre ayarlayabilirsiniz */
+}
+    
+/* CSS ile görselleri düzenleme */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Her satırda 2 resim */
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Diğer CSS kuralları buraya gelecek */
+</style>
+</head>
+<body>
+
+<h1>Hürkuş Havacılık Kulübü</h1>
+<img id="logo" src="LogoArkası_kalkık.png" alt="Restoran Logosu">
+
+<div class="gallery">
+    <div>
+        <img src="sponsor1.jpg" alt="Resim 1">
+        <p>LİLİON GÜZELLİK MERKEZİ</p>
+    </div>
+    <div>
+        <img src="sponsor2.jpg" alt="Resim 2">
+        <p>PASTA CORNER KAYSERİ %10</p>
+    </div>
+    <div>
+        <img src="sponsor3.jpg" alt="Resim 3">
+        <p>PİZZERİA CORNER KAYSERİ %10</p>
+    </div>
+    <div>
+        <img src="sponsor4.jpg" alt="Resim 4">
+        <p>SEVİGİLİM KUMDA KAHVE </p>
+    </div>
+    <div>
+        <img src="sponsor5.jpg" alt="Resim 5">
+        <p>Açıklama 5</p>
+    </div>
+    <div>
+        <img src="sponsor6.jpg" alt="Resim 6">
+        <p>ELİT KIRTASİYE ETİKET FİYATI ÜZERİNDEN %10(KİTAP FOTOKOPİSİ VE KİTAPLAR HARİÇ)</p>
+    </div>
+    <div>
+        <img src="sponsor7.jpg" alt="Resim 7">
+        <p>MERKEZ FİTNESS %20</p>
+    </div>
+    <div>
+        <img src="sponsor8.jpg" alt="Resim 8">
+        <p>BEŞİKTAŞ KAYSERİ MAĞAZASI %20</p>
+    </div>
+    <div>
+        <img src="sponsor9.jpg" alt="Resim 9">
+        <p>SD DÖNER (% İÇİN MAİL BEKLENİYOR)</p>
+    </div>
+    <div>
+        <img src="sponsor10.jpg" alt="Resim 10">
+        <p>SİNİ TAVINDA (TUNA)</p>
+    </div>
+</div>
+
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script>
+    // QR kodunu oluştur
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width: 100,
+        height: 100
+    });
+
+    // QR koduna linki ekle (örneğin, bu sayfanın linki)
+    qrcode.makeCode(window.location.href);
+</script>
+
+</body>
+</html>
